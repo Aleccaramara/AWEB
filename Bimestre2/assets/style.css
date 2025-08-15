@@ -1,0 +1,239 @@
+:root {
+    --cor-principal: #2C3E50;
+    --cor-secundaria: #f4f4f4;
+    --cor-destaque: #f5f1eb;
+    --cor-texto: #000000;
+ 
+}
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--cor-principal); 
+    margin: 0;
+    padding: 0;
+    color: var(--cor-texto);
+}
+
+header {
+    background-color: var(--cor-principal);
+    color: #F4F4F4;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#hero {
+    position: relative;
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto);
+    text-align: center;
+    height: calc(100vh - 80px);
+    display: block;
+    box-shadow: 0 4px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+#hero img {
+    width: 400px; 
+    height: auto; 
+    border-radius: 10px; 
+
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+#SOBRE, #CAUSOS, #PORTFOLIO, #CURIOSIDADES {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 80%;
+    border-radius: 8px;
+}
+
+#SOBRE p, #CAUSOS p, #PORTFOLIO p, #CURIOSIDADES {
+    font-size: 18px;
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+.cards-container {
+    width: 80%;
+    margin: 0 auto;
+    column-count: 3;
+    column-gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    break-inside: avoid;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+#CURIOSIDADES h3,
+#PORTFOLIO h3,
+#SOBRE h3,
+#CAUSOS h3,
+#CONTATOS h3 {
+    text-align: center;
+    font-size: 36px;
+    color: var(--cor-principal);
+    margin-bottom: 20px;
+}
+
+#PORTFOLIO h3 {
+    margin-top: 40px;
+}
+
+#CAUSOS {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#CONTATOS {
+    padding: 20px 20px;
+    background-color: var(--cor-principal);
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+#CONTATOS h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#AGENDA {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 90%;
+    border-radius: 8px;
+}
+
+#AGENDA h3 {
+    text-align: center;
+    font-size: 36px;
+    color: var(--cor-principal);
+    margin-bottom: 20px;
+}
+#CURIOSIDADES  ul {
+ 
+    padding: 0;
+    text-align: left;
+}
+
+#CURIOSIDADES  li {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+
+.agenda-tabela {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.agenda-tabela thead {
+    background-color: var(--cor-principal);
+    color: white;
+}
+
+.agenda-tabela th, .agenda-tabela td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.agenda-tabela tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.agenda-tabela tbody tr:hover {
+    background-color: #f1f1f1;
+    transition: 0.3s;
+}
+
+footer {
+  background-color: var(--cor-destaque);
+  color: #1D1D1D;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+footer a {
+  color: white;
+}
+footer  i {
+  color: #F4F4F4;    
+}
+
+.coluna {
+  display: inline-block; 
+  vertical-align: top;   
+  width: 40%;            
+  text-align: left;
+}
+
+.coluna h2 {
+  margin-bottom: 10px;
+}
